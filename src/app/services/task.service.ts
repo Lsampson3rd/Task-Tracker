@@ -20,5 +20,10 @@ export class TaskService {
           return of([]); // Return an empty observable on error
         })
       );
-  }  
+  } 
+  
+  deleteTask(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
+  }
 }
