@@ -8,6 +8,7 @@ import { TasksItemComponent } from "../tasks-item/tasks-item.component";
     selector: 'app-tasks',
     standalone: true,
     templateUrl: './tasks.component.html',
+    providers: [TaskService],
     styleUrl: './tasks.component.css',
     imports: [CommonModule, TasksItemComponent]
 })
