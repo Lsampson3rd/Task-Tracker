@@ -1,8 +1,8 @@
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterOutlet } from '@angular/router';
 
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 import { TasksComponent } from './components/tasks/tasks.component';
 
@@ -12,6 +12,6 @@ import { TasksComponent } from './components/tasks/tasks.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent, TasksComponent, FontAwesomeModule, HttpClientModule]
+    imports: [RouterOutlet, HeaderComponent, TasksComponent, FontAwesomeModule, HttpClientModule] 
 })
 export class AppComponent {}
